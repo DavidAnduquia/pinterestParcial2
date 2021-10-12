@@ -3,7 +3,7 @@ import React from 'react';
 
 const NavBarMobileLayout = () =>  {
     return (
-        <div>
+        <div style={_navBarStyles.container}>
                 <a> Para ti </a>
                 <a> Hoy </a>
                 <a> ilustration... </a>
@@ -15,7 +15,12 @@ const NavBarMobileLayout = () =>  {
 const _navBarStyles = {
 
     container:{
-  
+        display:'flex',
+        justifyContent:'space-evenly',
+        paddingTop:10,
+        alignItems:'center',
+        
+        height:'5vh'
     },
     
 };

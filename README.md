@@ -34,3 +34,4 @@ El proyecto  esta organizado de la siguiente manera
 
     npm install @material-ui/core
     npm install @mui/icons-material
+    npm install react-responsive

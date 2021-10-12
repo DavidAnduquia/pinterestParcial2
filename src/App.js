@@ -8,18 +8,61 @@ import MediaQuery from 'react-responsive';
 const  App = () => {
   return (
   <>
-  <MediaQuery maxWidth={800 } >
-    <NavBarMobileLayout />
-  </MediaQuery>
-  
-  <MediaQuery minWidth={800 } >
-     <NavBarDesktopLayout />
-  </MediaQuery>
+ 
+ <div style={_appStyle.container}>
 
-  <PinterestLayout />
+ 
+ <MediaQuery maxWidth={385} >
+ 
+ <NavBarMobileLayout />
+
+</MediaQuery>
+
+
+<MediaQuery minWidth={385} >
+ <NavBarDesktopLayout  style={_appStyle.body}  />
+</MediaQuery>
+
+<PinterestLayout /> 
+
+<MediaQuery maxWidth={385} >
+<NavigationLayout style={_appStyle.footer} /> 
+</MediaQuery>
+
+ </div>
   </>
 
   );
+}
+// <PinterestLayout />             <NavigationLayout style={_appStyle.footer} /> 
+
+
+
+const _appStyle = {
+
+    container:{
+      display:'flex',
+      flexDirection:'column',
+ 
+      height:'70%',
+  
+ 
+    },
+
+    body:{
+   
+   
+    },
+
+    footer:{
+      flex:1,
+      position:'absolute',
+      height:'33vh',
+  
+    }
+
+
+  
 }
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState}  from 'react';
+import NavigationLayout from '../Footer/NavigationLayout';
 import PinCard from './PinCard';
 
 const PinterestLayout = () => {
@@ -23,6 +24,8 @@ const PinterestLayout = () => {
                 />
             ))
             } 
+
+
         </div>
     );
 };
@@ -31,12 +34,11 @@ const PinterestLayout = () => {
 const _stylesLayout = {
     pin_container:{
         paddingTop:10,
-        margin:0,
+        margin:'auto',
         width:'90vw',
+     
         backgroundColor:'white',
-        position: 'absolute',
-        left: '50%',
-        transform: 'translateX(-50%)',
+      
         display:'grid',
         gridTemplateColumns: 'repeat(auto-fill, 250px)',
         gridAutoRows:'10px',
