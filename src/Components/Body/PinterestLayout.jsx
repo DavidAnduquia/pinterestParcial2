@@ -3,6 +3,7 @@ import {useState}  from 'react';
 import NavigationLayout from '../Footer/NavigationLayout';
 import PinCard from './PinCard';
 
+
 const PinterestLayout = () => {
 
     const[pinCards,setCard] = useState([
@@ -10,8 +11,13 @@ const PinterestLayout = () => {
         { id:2 , name:'pin 2' , size:"large" , sourceImg: "https://picsum.photos/190/221"},
         { id:3 , name:'pin 3' , size:"medium", sourceImg: "https://picsum.photos/231/233"},
         { id:4 , name:'pin 4' , size:"medium", sourceImg: "https://picsum.photos/232/222"},
-        { id:5 , name:'pin 5' , size:"medium", sourceImg: "https://picsum.photos/234/233"},
-        { id:6 , name:'pin 6' , size:"medium", sourceImg: "https://picsum.photos/235/233"},
+        { id:5 , name:'pin 5' , size:"large", sourceImg: "https://picsum.photos/234/333"},
+        { id:6 , name:'pin 6' , size:"medium", sourceImg: "https://picsum.photos/352/293"},
+        { id:7 , name:'pin 7' , size:"large", sourceImg: "https://picsum.photos/135/230"},
+        { id:8 , name:'pin 8' , size:"small", sourceImg: "https://picsum.photos/435/250"},
+        { id:9 , name:'pin 9' , size:"medium", sourceImg: "https://picsum.photos/235/433"},
+        { id:10 , name:'pin 10' , size:"large", sourceImg: "https://picsum.photos/295/633"},
+        { id:11 , name:'pin 11' , size:"small", sourceImg: "https://picsum.photos/230/533"},
         ]);
 
     return (
@@ -19,9 +25,11 @@ const PinterestLayout = () => {
   
             {
             pinCards.map((card) => (
-                <PinCard 
-                  card = {card}
-                />
+
+           
+                        <PinCard 
+                      card = {card} />
+        
             ))
             } 
 

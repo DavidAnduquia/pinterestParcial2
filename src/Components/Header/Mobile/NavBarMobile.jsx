@@ -20,7 +20,7 @@ const _navBarStyles = {
         paddingTop: 10,
         alignItems: 'center',
         height: '5vh',
-        fontWeight: '900',
+        fontWeight: '1000',
         'a:after': {
             content: "",
             position: 'absolute',

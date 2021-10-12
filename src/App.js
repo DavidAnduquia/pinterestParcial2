@@ -5,6 +5,7 @@ import NavBarMobileLayout from './Components/Header/Mobile/NavBarMobile';
 import NavigationLayout from './Components/Footer/NavigationLayout';
 import MediaQuery from 'react-responsive';
 
+
 const  App = () => {
   return (
   <>
